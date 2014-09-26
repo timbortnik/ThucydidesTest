@@ -30,6 +30,18 @@ public class EmailPage extends PageObject {
     
     @FindBy(css = "a.open-folder.inbox")
     private WebElementFacade inbox;
+  
+    @FindBy(css = "div#header-content-primary-buttons > a.compose-message")
+    private WebElementFacade compose;
+
+    @FindBy(css = "textarea#to-field")
+    private WebElementFacade toField;
+
+    @FindBy(css = "input#subject-field")
+    private WebElementFacade subjectField;
+
+    @FindBy(css = "div.top input.send")
+    private WebElementFacade sendButton;
     
     
     public void enter_login(String login) {
@@ -48,19 +60,20 @@ public class EmailPage extends PageObject {
     	return inbox.isVisible();
     }
     
-    
-    public List<String> getDefinitions() {
-        WebElementFacade definitionList = find(By.tagName("ol"));
-        List<WebElement> results = definitionList.findElements(By.tagName("li"));
-        return convert(results, toStrings());
+    public void press_compose(){
+    	compose.click();
     }
 
-    private Converter<WebElement, String> toStrings() {
-        return new Converter<WebElement, String>() {
-            public String convert(WebElement from) {
-                return from.getText();
-            }
-        };
+    public void enter_recipient(String to) {
+        toField.type(to);
+    }
+    
+    public void enter_subject(String subj) {
+        subjectField.type(subj);
+    }
+    
+    public void send_press(){
+    	sendButton.click();
     }
     
 }

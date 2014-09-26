@@ -1,0 +1,43 @@
+<acceptance-test-run title="Composing email" name="composing_email" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="3669" timestamp="2014-09-26T11:54:18.420+03:00">
+  <user-story id="Exam.requirements.Application.Email.EmailOps" name="Email ops" path="Exam.requirements.Application.Email">
+    <feature id="Exam.requirements.Application.Email" name="Email"/>
+  </user-story>
+  <tags>
+    <tag name="Email" type="feature"/>
+    <tag name="Email ops" type="story"/>
+  </tags>
+  <test-group name="Composes email: &lt;span class=&apos;step-parameter&apos;&gt;Test e-mail #4455012342, thucytest@hushmail.com&lt;/span&gt;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="d69272643276aa8f593fbc9beef33788_NONE.png"/>
+      <screenshot image="43522a720ac4c8255dcb70fc83aa4a8b_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="872">
+      <screenshots>
+        <screenshot image="d69272643276aa8f593fbc9beef33788_NONE.png"/>
+        <screenshot image="fcb8c41ed73101791070bb6b710f645d_NONE.png"/>
+      </screenshots>
+      <description>Clicks compose</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="988">
+      <screenshots>
+        <screenshot image="5cf7cc1dccb18fb924dbc0628f492837_NONE.png"/>
+        <screenshot image="3bc58cd51cb3929b2b20958f43b16aa6_NONE.png"/>
+      </screenshots>
+      <description>Enters to: &lt;span class=&apos;step-parameter&apos;&gt;thucytest@hushmail.com&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1015">
+      <screenshots>
+        <screenshot image="3bc58cd51cb3929b2b20958f43b16aa6_NONE.png"/>
+        <screenshot image="c1fed8681fb07cb99e1a7e12b747a353_NONE.png"/>
+      </screenshots>
+      <description>Enters subj: &lt;span class=&apos;step-parameter&apos;&gt;Test e-mail #4455012342&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="501">
+      <screenshots>
+        <screenshot image="6f7aabb31fb6dd3a22d09e46dd0c6b14_NONE.png"/>
+        <screenshot image="7aecfe5b0e935ef4e10c73487e40e42d_NONE.png"/>
+      </screenshots>
+      <description>Pressing send button</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

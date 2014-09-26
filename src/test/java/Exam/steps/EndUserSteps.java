@@ -30,7 +30,7 @@ public class EndUserSteps extends ScenarioSteps {
     }
     
     @Step
-	public void pressing_button() {
+	public void pressing_login_button() {
 		emailPage.signin_press();
 	}
 
@@ -40,11 +40,42 @@ public class EndUserSteps extends ScenarioSteps {
     }
 
     @Step
-    public void signs_in(){
+    public void signs_in(String login, String pass){
         is_the_signin_page();
-    	enters_login("thucytest@hushmail.com");
-    	enters_pass("testthucy");
-    	pressing_button();
+    	enters_login(login);
+    	enters_pass(pass);
+    	pressing_login_button();
     	seeing_inbox();    	
     }
+
+    @Step
+    public void clicks_compose(){
+    	emailPage.press_compose();
+    }
+
+    @Step
+    public void enters_to(String to) {
+        emailPage.enter_recipient(to);
+    }
+
+    @Step
+    public void enters_subj(String subj) {
+        emailPage.enter_subject(subj);
+    }
+    
+    @Step
+	public void pressing_send_button() {
+		emailPage.send_press();
+	}
+    
+    @Step
+    public void composes_email(String subj, String to){
+    	clicks_compose();
+    	enters_to(to);
+    	enters_subj(subj);
+    	pressing_send_button();
+    }
+
+
+
 }

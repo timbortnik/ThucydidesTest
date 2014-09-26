@@ -36,7 +36,12 @@ public class EmailStoryTest {
     @Issue("#MAIL-1")
     @Test
     public void signing_in() {
-    	endUser.signs_in();
+    	endUser.signs_in("thucytest@hushmail.com","testthucy");
     }    
+
+    @Test
+    public void composing_email(){
+        endUser.composes_email("Test e-mail #4455012342", "thucytest@hushmail.com");
+    }
 
 }
