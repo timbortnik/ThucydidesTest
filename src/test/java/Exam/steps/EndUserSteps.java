@@ -15,8 +15,8 @@ public class EndUserSteps extends ScenarioSteps {
     EmailPage emailPage;
     
     @Step
-    public void is_the_signin_page() {
-        emailPage.open();
+    public void is_the_signin_page(String url) {
+        emailPage.openAt(url);
     }
 
     @Step
@@ -36,16 +36,32 @@ public class EndUserSteps extends ScenarioSteps {
 
     @Step
     public void seeing_inbox(){
-    	assertThat("true",emailPage.inbox_visible());
+    	assertThat("I see inbox",emailPage.inbox_visible());
     }
 
     @Step
-    public void signs_in(String login, String pass){
-        is_the_signin_page();
+    public void seeing_signin(){
+    	assertThat("I see signin",emailPage.signin_visible());
+    }
+
+    @Step
+    public void signs_in(String login, String pass, String url){
+        is_the_signin_page(url);
     	enters_login(login);
     	enters_pass(pass);
     	pressing_login_button();
     	seeing_inbox();    	
+    }
+    
+    @Step
+    public void clicks_signoff(){
+    	emailPage.click_signoff();
+    }
+
+    @Step
+    public void signs_out(){
+        clicks_signoff();
+        seeing_signin();
     }
 
     @Step
@@ -75,7 +91,5 @@ public class EndUserSteps extends ScenarioSteps {
     	enters_subj(subj);
     	pressing_send_button();
     }
-
-
 
 }

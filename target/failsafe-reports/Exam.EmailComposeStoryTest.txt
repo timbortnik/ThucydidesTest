@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: Exam.EmailStoryTest
+Test set: Exam.EmailComposeStoryTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.135 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.401 sec

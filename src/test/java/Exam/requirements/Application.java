@@ -3,7 +3,7 @@ package Exam.requirements;
 import net.thucydides.core.annotations.Feature;
 
 public class Application {
-    @Feature
+	@Feature
     public class Email {
         public class EmailOps {}
     }

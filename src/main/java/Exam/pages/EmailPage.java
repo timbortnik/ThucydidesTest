@@ -16,7 +16,7 @@ import java.util.List;
 
 import static ch.lambdaj.Lambda.convert;
 
-@DefaultUrl("https://www.hushmail.com/preview/hushmail/")
+//@DefaultUrl("https://www.hushmail.com/preview/hushmail/")
 public class EmailPage extends PageObject {
 
     @FindBy(css = "input#hush_username")
@@ -39,6 +39,9 @@ public class EmailPage extends PageObject {
 
     @FindBy(css = "input#subject-field")
     private WebElementFacade subjectField;
+    
+    @FindBy(css = "a#event_sign-out-link")
+    private WebElementFacade signoff;
 
     @FindBy(css = "div.top input.send")
     private WebElementFacade sendButton;
@@ -76,4 +79,12 @@ public class EmailPage extends PageObject {
     	sendButton.click();
     }
     
+    public boolean signin_visible(){
+    	return userLogin.isVisible();
+    }
+
+    public void click_signoff(){
+    	signoff.click();
+    }
+
 }
