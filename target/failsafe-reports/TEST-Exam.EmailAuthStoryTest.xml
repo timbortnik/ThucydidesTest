@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="23.32" errors="0" skipped="0" tests="1" name="Exam.EmailAuthStoryTest">
+<testsuite failures="0" time="36.341" errors="0" skipped="0" tests="1" name="Exam.EmailAuthStoryTest">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="23.32" classname="Exam.EmailAuthStoryTest" name="signing_in_out"/>
+  <testcase time="36.341" classname="Exam.EmailAuthStoryTest" name="signing_in_out"/>
 </testsuite>

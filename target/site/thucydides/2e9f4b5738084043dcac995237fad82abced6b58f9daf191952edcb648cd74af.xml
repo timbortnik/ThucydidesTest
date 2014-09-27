@@ -1,4 +1,4 @@
-<acceptance-test-run title="Composing email" name="composing_email" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="23896" timestamp="2014-09-27T13:51:22.090+03:00">
+<acceptance-test-run title="Composing email" name="composing_email" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="38862" timestamp="2014-09-27T14:27:32.060+03:00">
   <user-story id="Exam.requirements.Application.Email.EmailOps" name="Email ops" path="Exam.requirements.Application.Email">
     <feature id="Exam.requirements.Application.Email" name="Email"/>
   </user-story>
@@ -11,36 +11,36 @@
   </tags>
   <test-group name="Signs in: &lt;span class=&apos;step-parameter&apos;&gt;thucytest@hushmail.com, testthucy, https://www.hushmail.com/preview/hushmail/&lt;/span&gt;" result="SUCCESS">
     <screenshots>
-      <screenshot image="feeafca23249cac5871296287e15f7db_NONE.png"/>
+      <screenshot image="b4ee7577c8dc5e3f0a934a53c03f2100_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="10964">
+    <test-step result="SUCCESS" duration="21108">
       <screenshots>
-        <screenshot image="a0c9ac7db14e04c87accdac139c612c5_NONE.png"/>
+        <screenshot image="565f5a251716211a3b6817f8584e6ed3_NONE.png"/>
       </screenshots>
       <description>Is the signin page: &lt;span class=&apos;step-parameter&apos;&gt;https://www.hushmail.com/preview/hushmail/&lt;/span&gt;</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1125">
+    <test-step result="SUCCESS" duration="1008">
       <screenshots>
         <screenshot image="565f5a251716211a3b6817f8584e6ed3_NONE.png"/>
         <screenshot image="b2f554be915ba09ef9967235f5506d30_NONE.png"/>
       </screenshots>
       <description>Enters login: &lt;span class=&apos;step-parameter&apos;&gt;thucytest@hushmail.com&lt;/span&gt;</description>
     </test-step>
-    <test-step result="SUCCESS" duration="801">
+    <test-step result="SUCCESS" duration="712">
       <screenshots>
-        <screenshot image="aecdceade0ffbb4c6c6c43d7e383d6c1_NONE.png"/>
+        <screenshot image="b2f554be915ba09ef9967235f5506d30_NONE.png"/>
         <screenshot image="b59ae30d21aa7521e3ecff02ca4cd299_NONE.png"/>
       </screenshots>
       <description>Enters pass: &lt;span class=&apos;step-parameter&apos;&gt;testthucy&lt;/span&gt;</description>
     </test-step>
-    <test-step result="SUCCESS" duration="383">
+    <test-step result="SUCCESS" duration="360">
       <screenshots>
         <screenshot image="b59ae30d21aa7521e3ecff02ca4cd299_NONE.png"/>
         <screenshot image="ac16c5d88d67a8dc36b7891f4690d690_NONE.png"/>
       </screenshots>
       <description>Pressing login button</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2082">
+    <test-step result="SUCCESS" duration="2859">
       <screenshots>
         <screenshot image="ac16c5d88d67a8dc36b7891f4690d690_NONE.png"/>
         <screenshot image="731b7d7e23e5f25c4c094e581628e10e_NONE.png"/>
@@ -50,51 +50,51 @@
   </test-group>
   <test-group name="Composes email: &lt;span class=&apos;step-parameter&apos;&gt;Test e-mail #4455012342, thucytest@hushmail.com&lt;/span&gt;" result="SUCCESS">
     <screenshots>
-      <screenshot image="64862b05f5b08221c5a24fb7ba00685d_NONE.png"/>
+      <screenshot image="0c1276c702733e2bc367da42378be441_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="945">
+    <test-step result="SUCCESS" duration="533">
       <screenshots>
-        <screenshot image="65d61d62badd010112322de5795228f4_NONE.png"/>
+        <screenshot image="a7c87af6d05e72ab92656b869edb470b_NONE.png"/>
       </screenshots>
       <description>Clicks compose</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1079">
+    <test-step result="SUCCESS" duration="4964">
       <screenshots>
-        <screenshot image="3db34893d49037113f78b90e27f13b2c_NONE.png"/>
-        <screenshot image="38c1ef0ce5d3bcbb24d51316b2170c84_NONE.png"/>
+        <screenshot image="a7c87af6d05e72ab92656b869edb470b_NONE.png"/>
+        <screenshot image="75c963fbb9901d4052876197d52bc7e6_NONE.png"/>
       </screenshots>
       <description>Enters to: &lt;span class=&apos;step-parameter&apos;&gt;thucytest@hushmail.com&lt;/span&gt;</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1036">
+    <test-step result="SUCCESS" duration="1055">
       <screenshots>
-        <screenshot image="af38320c32608e578a85faa425316f4d_NONE.png"/>
-        <screenshot image="8199ee7e82838a233a129edc0ae4f34f_NONE.png"/>
+        <screenshot image="98dfdcfbf96c642549ac4b2c58a17d07_NONE.png"/>
+        <screenshot image="0bbc93b79510590d8d24f296f689ceb3_NONE.png"/>
       </screenshots>
       <description>Enters subj: &lt;span class=&apos;step-parameter&apos;&gt;Test e-mail #4455012342&lt;/span&gt;</description>
     </test-step>
-    <test-step result="SUCCESS" duration="495">
+    <test-step result="SUCCESS" duration="536">
       <screenshots>
-        <screenshot image="8199ee7e82838a233a129edc0ae4f34f_NONE.png"/>
-        <screenshot image="d502c1459a10aa80e9defa2ec73f11ed_NONE.png"/>
+        <screenshot image="eace7070b82aaf62818ba348a53a166f_NONE.png"/>
+        <screenshot image="55cf1275e65e40b53d9fdeb436e79f87_NONE.png"/>
       </screenshots>
       <description>Pressing send button</description>
     </test-step>
   </test-group>
   <test-group name="Signs out" result="SUCCESS">
     <screenshots>
-      <screenshot image="b6d12ba56c2e5b0324ae9895efa1e306_NONE.png"/>
-      <screenshot image="462a17864c38fc1d1209bce56b341851_NONE.png"/>
+      <screenshot image="64862b05f5b08221c5a24fb7ba00685d_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="3589">
+    <test-step result="SUCCESS" duration="4226">
       <screenshots>
         <screenshot image="3e41e66f7b2d6e194cd3fc5f290a934a_NONE.png"/>
         <screenshot image="59ba2232eda5e22ea3b2fd12cbefab2d_NONE.png"/>
       </screenshots>
       <description>Clicks signoff</description>
     </test-step>
-    <test-step result="SUCCESS" duration="415">
+    <test-step result="SUCCESS" duration="480">
       <screenshots>
         <screenshot image="b31eca0a01c54d1bb858012e7e995e22_NONE.png"/>
+        <screenshot image="462a17864c38fc1d1209bce56b341851_NONE.png"/>
       </screenshots>
       <description>Seeing signin</description>
     </test-step>

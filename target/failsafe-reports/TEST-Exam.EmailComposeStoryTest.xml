@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="24.213" errors="0" skipped="0" tests="1" name="Exam.EmailComposeStoryTest">
+<testsuite failures="0" time="39.17" errors="0" skipped="0" tests="1" name="Exam.EmailComposeStoryTest">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="24.213" classname="Exam.EmailComposeStoryTest" name="composing_email"/>
+  <testcase time="39.17" classname="Exam.EmailComposeStoryTest" name="composing_email"/>
 </testsuite>

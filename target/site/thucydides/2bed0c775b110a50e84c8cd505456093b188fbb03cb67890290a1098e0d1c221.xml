@@ -1,4 +1,4 @@
-<acceptance-test-run title="Signing in out" name="signing_in_out" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="22983" timestamp="2014-09-27T13:51:21.593+03:00">
+<acceptance-test-run title="Signing in out" name="signing_in_out" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="36045" timestamp="2014-09-27T14:27:31.784+03:00">
   <user-story id="Exam.requirements.Application.Email.EmailOps" name="Email ops" path="Exam.requirements.Application.Email">
     <feature id="Exam.requirements.Application.Email" name="Email"/>
   </user-story>
@@ -11,57 +11,56 @@
   </tags>
   <test-group name="Signs in: &lt;span class=&apos;step-parameter&apos;&gt;thucytest@hushmail.com, testthucy, https://www.hushmail.com/preview/hushmail/&lt;/span&gt;" result="SUCCESS">
     <screenshots>
-      <screenshot image="f84f72e087156a1670f60f49c654d82d_NONE.png"/>
+      <screenshot image="2bbd88b075b37e78e3c74c82fe6d8c23_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="10296">
+    <test-step result="SUCCESS" duration="15029">
       <screenshots>
         <screenshot image="565f5a251716211a3b6817f8584e6ed3_NONE.png"/>
       </screenshots>
       <description>Is the signin page: &lt;span class=&apos;step-parameter&apos;&gt;https://www.hushmail.com/preview/hushmail/&lt;/span&gt;</description>
     </test-step>
-    <test-step result="SUCCESS" duration="980">
+    <test-step result="SUCCESS" duration="867">
       <screenshots>
-        <screenshot image="a977f4a5c81fcda0b47739871b9b312b_NONE.png"/>
-        <screenshot image="aecdceade0ffbb4c6c6c43d7e383d6c1_NONE.png"/>
+        <screenshot image="565f5a251716211a3b6817f8584e6ed3_NONE.png"/>
+        <screenshot image="b2f554be915ba09ef9967235f5506d30_NONE.png"/>
       </screenshots>
       <description>Enters login: &lt;span class=&apos;step-parameter&apos;&gt;thucytest@hushmail.com&lt;/span&gt;</description>
     </test-step>
-    <test-step result="SUCCESS" duration="827">
+    <test-step result="SUCCESS" duration="730">
       <screenshots>
         <screenshot image="b2f554be915ba09ef9967235f5506d30_NONE.png"/>
         <screenshot image="b59ae30d21aa7521e3ecff02ca4cd299_NONE.png"/>
       </screenshots>
       <description>Enters pass: &lt;span class=&apos;step-parameter&apos;&gt;testthucy&lt;/span&gt;</description>
     </test-step>
-    <test-step result="SUCCESS" duration="454">
+    <test-step result="SUCCESS" duration="373">
       <screenshots>
         <screenshot image="b59ae30d21aa7521e3ecff02ca4cd299_NONE.png"/>
-        <screenshot image="60d43761c28dbae8e4660bc00f2818d0_NONE.png"/>
+        <screenshot image="ac16c5d88d67a8dc36b7891f4690d690_NONE.png"/>
       </screenshots>
       <description>Pressing login button</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2059">
+    <test-step result="SUCCESS" duration="4398">
       <screenshots>
         <screenshot image="ac16c5d88d67a8dc36b7891f4690d690_NONE.png"/>
-        <screenshot image="1dc5606aceea4b5e5c258751bc746e43_NONE.png"/>
+        <screenshot image="e9f175d84e3c3ee36f6187c114473206_NONE.png"/>
       </screenshots>
       <description>Seeing inbox</description>
     </test-step>
   </test-group>
   <test-group name="Signs out" result="SUCCESS">
     <screenshots>
-      <screenshot image="f84f72e087156a1670f60f49c654d82d_NONE.png"/>
+      <screenshot image="462a17864c38fc1d1209bce56b341851_NONE.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="7189">
+    <test-step result="SUCCESS" duration="13492">
       <screenshots>
-        <screenshot image="0ffe507a805330a86b80b5aa6d66838c_NONE.png"/>
+        <screenshot image="0f4b1a96626edd2ac3e085daca7e982e_NONE.png"/>
       </screenshots>
       <description>Clicks signoff</description>
     </test-step>
-    <test-step result="SUCCESS" duration="402">
+    <test-step result="SUCCESS" duration="389">
       <screenshots>
         <screenshot image="b31eca0a01c54d1bb858012e7e995e22_NONE.png"/>
-        <screenshot image="462a17864c38fc1d1209bce56b341851_NONE.png"/>
       </screenshots>
       <description>Seeing signin</description>
     </test-step>
