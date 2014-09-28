@@ -6,17 +6,14 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import net.thucydides.core.annotations.Issue;
 import net.thucydides.core.annotations.ManagedPages;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Story;
 import net.thucydides.core.pages.Pages;
 import net.thucydides.core.annotations.Managed;
-import net.thucydides.junit.annotations.Concurrent;
 import net.thucydides.junit.runners.ThucydidesRunner;
 
 import org.junit.Before;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
@@ -25,6 +22,11 @@ import Exam.steps.EndUserSteps;
 
 @Story(Application.Email.EmailOps.class)
 @RunWith(ThucydidesRunner.class)
+
+//
+// This is a base class for Email Test stories.
+// It provides loading of properties and defaults in case properties are not present
+//
 public class EmailBase {
 	
 	String 	login, pass, testSubj, url;

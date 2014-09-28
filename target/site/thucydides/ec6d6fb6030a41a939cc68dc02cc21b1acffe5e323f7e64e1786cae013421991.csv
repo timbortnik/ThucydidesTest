@@ -1,3 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Email ops","Composing email","SUCCESS","2014-09-27T11:27:32.060Z","0.0","38.86"
-"Email ops","Signing in out","SUCCESS","2014-09-27T11:27:31.784Z","0.0","36.05"
+"Email ops","Composing email","SUCCESS","2014-09-28T17:52:56.210Z","0.0","20.39"
+"Email ops","Deleting email","SUCCESS","2014-09-28T17:51:01.434Z","0.0","44.82"
+"Email ops","Deleting spam","SUCCESS","2014-09-28T17:52:10.762Z","0.0","44.46"
+"Email ops","Signing in out","SUCCESS","2014-09-28T17:51:48.821Z","0.0","20.95"

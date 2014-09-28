@@ -16,8 +16,8 @@ public class EmailComposeStoryTest extends EmailBase{
     @Test
     public void composing_email(){
     	endUser.signs_in(login, pass, url);
-        endUser.composes_email(testSubj, login);
-    	endUser.signs_out();
+        endUser.composes_email("[test]"+testSubj, login);
+        endUser.signs_out();
     }
     
 }

@@ -1,0 +1,155 @@
+<acceptance-test-run title="Deleting spam" name="deleting_spam" steps="18" successful="18" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="44463" timestamp="2014-09-28T20:52:10.762+03:00">
+  <user-story id="Exam.requirements.Application.Email.EmailOps" name="Email ops" path="Exam.requirements.Application.Email">
+    <feature id="Exam.requirements.Application.Email" name="Email"/>
+  </user-story>
+  <issues>
+    <issue>#MAIL-4</issue>
+  </issues>
+  <tags>
+    <tag name="Email" type="feature"/>
+    <tag name="Email ops" type="story"/>
+  </tags>
+  <test-group name="Signs in: &lt;span class=&apos;step-parameter&apos;&gt;thucytest@hushmail.com, testthucy, https://www.hushmail.com/preview/hushmail/&lt;/span&gt;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="14c885b4227bd65d5c778e2e27575521_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="6078">
+      <screenshots>
+        <screenshot image="565f5a251716211a3b6817f8584e6ed3_NONE.png"/>
+      </screenshots>
+      <description>Is the signin page: &lt;span class=&apos;step-parameter&apos;&gt;https://www.hushmail.com/preview/hushmail/&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="767">
+      <screenshots>
+        <screenshot image="565f5a251716211a3b6817f8584e6ed3_NONE.png"/>
+        <screenshot image="b2f554be915ba09ef9967235f5506d30_NONE.png"/>
+      </screenshots>
+      <description>Enters login: &lt;span class=&apos;step-parameter&apos;&gt;thucytest@hushmail.com&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="731">
+      <screenshots>
+        <screenshot image="b2f554be915ba09ef9967235f5506d30_NONE.png"/>
+        <screenshot image="c8018c892e7f610603bf6cdeac1eb89d_NONE.png"/>
+      </screenshots>
+      <description>Enters pass: &lt;span class=&apos;step-parameter&apos;&gt;testthucy&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="356">
+      <screenshots>
+        <screenshot image="b59ae30d21aa7521e3ecff02ca4cd299_NONE.png"/>
+        <screenshot image="ac16c5d88d67a8dc36b7891f4690d690_NONE.png"/>
+      </screenshots>
+      <description>Pressing login button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2062">
+      <screenshots>
+        <screenshot image="ac16c5d88d67a8dc36b7891f4690d690_NONE.png"/>
+        <screenshot image="c0a8ac031468e30e9f13ac6e4b847f27_NONE.png"/>
+      </screenshots>
+      <description>Seeing inbox</description>
+    </test-step>
+  </test-group>
+  <test-group name="Composes email: &lt;span class=&apos;step-parameter&apos;&gt;[spam]Test e-mail #4455012342, thucytest@hushmail.com&lt;/span&gt;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="14c885b4227bd65d5c778e2e27575521_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="506">
+      <screenshots>
+        <screenshot image="409ab15d03470e82849e541994e3945e_NONE.png"/>
+      </screenshots>
+      <description>Clicks compose</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1690">
+      <screenshots>
+        <screenshot image="409ab15d03470e82849e541994e3945e_NONE.png"/>
+        <screenshot image="31af2aca036fd1c72a67b5aec565fff4_NONE.png"/>
+      </screenshots>
+      <description>Enters to: &lt;span class=&apos;step-parameter&apos;&gt;thucytest@hushmail.com&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1077">
+      <screenshots>
+        <screenshot image="31af2aca036fd1c72a67b5aec565fff4_NONE.png"/>
+        <screenshot image="6381cc6eca4074368f2fa647a4d2a4f2_NONE.png"/>
+      </screenshots>
+      <description>Enters subj: &lt;span class=&apos;step-parameter&apos;&gt;[spam]Test e-mail #4455012342&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="540">
+      <screenshots>
+        <screenshot image="3ec5f20b7643df1a63adede6f8d78e13_NONE.png"/>
+        <screenshot image="15641369949deee389d21da81883763e_NONE.png"/>
+      </screenshots>
+      <description>Pressing send button</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2277">
+      <screenshots>
+        <screenshot image="0ecff0363bfdbe4f897c61a449017448_NONE.png"/>
+        <screenshot image="cf0bfd7077d571725af699c14c8eb804_NONE.png"/>
+      </screenshots>
+      <description>Seeing status sent</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="11205">
+    <screenshots>
+      <screenshot image="cf0bfd7077d571725af699c14c8eb804_NONE.png"/>
+      <screenshot image="e2aa5e70163cdc42948a43993fe3272f_NONE.png"/>
+    </screenshots>
+    <description>Checks email</description>
+  </test-step>
+  <test-group name="Deletes spam: &lt;span class=&apos;step-parameter&apos;&gt;[spam]Test e-mail #4455012342&lt;/span&gt;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="e2aa5e70163cdc42948a43993fe3272f_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="468">
+      <screenshots>
+        <screenshot image="bd720df109b36f72db8fbad47d0b0eea_NONE.png"/>
+      </screenshots>
+      <description>Checks box by subj: &lt;span class=&apos;step-parameter&apos;&gt;[spam]Test e-mail #4455012342&lt;/span&gt;</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="531">
+      <screenshots>
+        <screenshot image="9e09c45f70a4894555b1693c4951a792_NONE.png"/>
+        <screenshot image="b31ba2238b289712ef6951e06dd9626b_NONE.png"/>
+      </screenshots>
+      <description>Clicks move</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="677">
+      <screenshots>
+        <screenshot image="b31ba2238b289712ef6951e06dd9626b_NONE.png"/>
+        <screenshot image="51c746708ebcd6b5393f53378d31e90e_NONE.png"/>
+      </screenshots>
+      <description>Enters junk</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="532">
+      <screenshots>
+        <screenshot image="d1431b49f86297881be31602bd9f1017_NONE.png"/>
+        <screenshot image="4d82388b27e7323f8b5fdf331be287ae_NONE.png"/>
+      </screenshots>
+      <description>Clicks junk</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="630">
+      <screenshots>
+        <screenshot image="4d82388b27e7323f8b5fdf331be287ae_NONE.png"/>
+        <screenshot image="d3f66ffcf26998d7d7a2203c134269ab_NONE.png"/>
+      </screenshots>
+      <description>Seeing status junk</description>
+    </test-step>
+  </test-group>
+  <test-group name="Signs out" result="SUCCESS">
+    <screenshots>
+      <screenshot image="d3f66ffcf26998d7d7a2203c134269ab_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2868">
+      <screenshots>
+        <screenshot image="d3f66ffcf26998d7d7a2203c134269ab_NONE.png"/>
+        <screenshot image="7b05e5b8953be0b875c52f2ec617ad1f_NONE.png"/>
+      </screenshots>
+      <description>Clicks signoff</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="365">
+      <screenshots>
+        <screenshot image="b8f3b8111b4922a5908c1d4c376d5b97_NONE.png"/>
+        <screenshot image="b31eca0a01c54d1bb858012e7e995e22_NONE.png"/>
+      </screenshots>
+      <description>Seeing signin</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

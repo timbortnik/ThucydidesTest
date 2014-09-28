@@ -2,17 +2,16 @@ package Exam.steps;
 
 import Exam.pages.EmailPage;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.pages.Pages;
 import net.thucydides.core.steps.ScenarioSteps;
 
-import static ch.lambdaj.Lambda.join;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.hasItem;
 
+//
+// This class contains steps definitions common for all Email Tests stories
+//
 public class EndUserSteps extends ScenarioSteps {
 
-    EmailPage emailPage;
+	EmailPage emailPage;
     
     @Step
     public void is_the_signin_page(String url) {
@@ -36,12 +35,12 @@ public class EndUserSteps extends ScenarioSteps {
 
     @Step
     public void seeing_inbox(){
-    	assertThat("I see inbox",emailPage.inbox_visible());
+    	assertThat("Inbox is visible", emailPage.inbox_visible());
     }
 
     @Step
     public void seeing_signin(){
-    	assertThat("I see signin",emailPage.signin_visible());
+    	assertThat("Signin prompt is visibe", emailPage.signin_visible());
     }
 
     @Step
@@ -85,11 +84,87 @@ public class EndUserSteps extends ScenarioSteps {
 	}
     
     @Step
+    public void seeing_status_sent(){
+    	assertThat("Email sent label appeared", emailPage.status_check("Sent"));
+    }
+
+    @Step
     public void composes_email(String subj, String to){
     	clicks_compose();
     	enters_to(to);
     	enters_subj(subj);
     	pressing_send_button();
+    	seeing_status_sent();
+    }
+    
+    @Step
+    public String checks_box_by_subj(String subj){
+    	return emailPage.checks_specific_subj(subj);
     }
 
+    @Step
+    public void clicks_delete(){
+    	emailPage.click_del();
+    }
+
+    @Step
+    public void clicks_move(){
+    	emailPage.click_move();
+    }
+    
+    @Step
+    public void clicks_junk(){
+    	emailPage.click_junk();
+    }
+    
+    @Step
+    public void confirms_trash(){
+    	emailPage.click_trash();
+    }
+    
+    @Step
+    public void enters_junk(){
+    	emailPage.enter_junk();
+    }
+    
+    @Step
+    public void seeing_status_delete(){
+    	assertThat("Email deleted label appeared", emailPage.status_check("Deleted"));
+    }
+
+    @Step
+    public void seeing_status_junk(){
+    	assertThat("Email moved to Junk label appeared", 
+    			emailPage.status_check("Moved item to Junk"));
+    }
+
+    @Step
+    public void deletes_email(String subj){
+    	String date;
+    	
+    	date = checks_box_by_subj(subj);
+    	clicks_delete();
+    	confirms_trash();
+    	seeing_status_delete();
+    	assertThat("Deleted email is not in inbox", 
+    			!emailPage.is_specific_subj_date_present(subj, date));
+    }
+    
+    @Step
+    public void deletes_spam(String subj){
+    	String date;
+    	
+    	date = checks_box_by_subj(subj);
+    	clicks_move();
+    	enters_junk();
+    	clicks_junk();
+    	seeing_status_junk();
+    	assertThat("Deleted email is not in inbox", 
+    			!emailPage.is_specific_subj_date_present(subj, date));
+    }
+  
+    @Step
+    public void checks_email(){
+    	emailPage.click_check_mail();
+    }
 }
